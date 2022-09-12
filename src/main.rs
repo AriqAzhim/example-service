@@ -2,6 +2,7 @@
 
 // #[deny(missing_docs)]
 // #[deny(warnings)]
+//
 
 pub mod graphql;
 pub mod objects;

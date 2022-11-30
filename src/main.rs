@@ -4,6 +4,7 @@
 // #[deny(warnings)]
 //
 
+#[cfg(feature = "ground")]
 pub mod graphql;
 pub mod objects;
 pub mod service;
@@ -171,6 +172,9 @@ fn main() -> ExampleResult<()> {
         },
     );
 
+    #[cfg(feature = "debug")]
+    service::debug();
+
     #[cfg(feature = "ground")]
     // Start debug service
     Service::new(
@@ -190,11 +194,8 @@ fn main() -> ExampleResult<()> {
     //Start up UDP server
     Service::new(service_config, subsystem, Some(Arc::new(udp_handler))).start();
 
-    #[cfg(debug)]
-    println!("{:?}", service_config);
-
-    #[cfg(debug)]
-    debug();
+    // #[cfg(feature = "debug")]
+    // println!("{:?}", service_config);
 
     Ok(())
 }

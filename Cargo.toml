@@ -12,13 +12,11 @@ circular-queue = "0.2.6"
 example-api = { git = "https://github.com/AriqAzhim/sperospace-contactile-api.git"}
 cubeos-service = { git = "ssh://git@github.com/Cube-OS/cubeos-service.git"}
 cubeos-error = { git = "ssh://git@github.com/Cube-OS/cubeos-error.git"}
-juniper = "0.14.2"
 serde = "1.0"
 serial = "0.4.0"
 
 # enable features for cubeos-service
 [features]
 default = ['cubeos-service/default']
-graphql = ['cubeos-service/graphql']
 ground = ['cubeos-service/ground']
 debug = ['cubeos-service/debug']

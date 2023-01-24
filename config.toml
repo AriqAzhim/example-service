@@ -9,7 +9,7 @@ udp_to = '127.0.0.1:8031'
 err_buff_len = 64
 wd_timeout = 1000
 udp_socket = '0.0.0.0:8029' # listening to all network interfaces
-target = '192.168.2.161:8029' # address of OBC on the network
+target = '192.168.1.119:8029' # address of OBC on the network
 
 # Space Segment
 [example-service.addr]

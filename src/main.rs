@@ -172,8 +172,8 @@ fn main() -> ExampleResult<()> {
         },
     );
 
-    #[cfg(feature = "debug")]
-    service::debug();
+    // #[cfg(feature = "debug")]
+    // service::debug();
 
     #[cfg(feature = "ground")]
     // Start debug service
